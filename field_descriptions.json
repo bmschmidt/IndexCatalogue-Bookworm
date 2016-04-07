@@ -1,0 +1,56 @@
+[
+    {
+        "datatype": "categorical",
+        "field": "Language",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "date",
+        "field": "PubDate",
+        "unique": true,
+        "type": "character"},
+    {
+        "datatype": "etc",
+        "field": "Title",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "etc",
+        "field": "LastName",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "etc",
+        "field": "subject1",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "categorical",
+        "field": "subject2",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "categorical",
+        "field": "subject3",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "categorical",
+        "field": "Place",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "categorical",
+        "field": "JournalTA",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "categorical",
+        "field": "TypeOfResource",
+        "unique": false,
+        "type": "character"},
+    {
+        "datatype": "categorical",
+        "field": "Size",
+        "unique": false,
+        "type": "character"}]
