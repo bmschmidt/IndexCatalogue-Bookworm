@@ -34,7 +34,11 @@ def handle(line):
         try:
             o = xmltodict.parse(line)['IndexCatalogueRecord']
         except xml.parsers.expat.ExpatError:
-            return
+            if len(line) < 89:
+                return
+            else:
+                print (len(line),line)
+                raise
         f['filename'] = o['IndexCatalogueID']
         for key in ['Title','TypeOfResource','Language',"Size"]:
             try:
@@ -76,7 +80,6 @@ def handle(line):
 
 i = 0
 limit = float("inf")
-limit = 10000;
 for filename in [file for file in os.listdir(".") if re.search("xml.gz",file)]:
     file = gzip.open(filename)
 
