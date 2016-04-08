@@ -2,7 +2,7 @@ targets = ftp://public.nlm.nih.gov/nlmdata/IndexCatalogue/IndexCatalogueSeries1/
 
 
 
-all: input.txt jsoncatalog.txt
+all: input.txt jsoncatalog.txt .bookworm
 	bookworm build all
 
 downloads:

@@ -56,3 +56,4 @@ docs/_build/
 IndexCatalogueSeries1.xml.gz IndexCatalogueSeries2.xml.gz IndexCatalogueSeries3.xml.gz IndexCatalogueSeries4.xml.gz IndexCatalogueSeries5.xml.gz
 *.gz
 .bookworm
+.DS_Store

@@ -5,10 +5,13 @@
         "unique": false,
         "type": "character"},
     {
-        "datatype": "date",
+        "datatype": "time",
         "field": "PubDate",
         "unique": true,
-        "type": "character"},
+        "type": "character",
+	"derived":
+	[{"resolution":"year"}]
+    },
     {
         "datatype": "etc",
         "field": "Title",
