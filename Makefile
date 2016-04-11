@@ -6,16 +6,16 @@ all: input.txt jsoncatalog.txt .bookworm
 
 .bookworm/extensions/bookworm-geolocator:
 	mkdir -p .bookworm/extensions
-	git clone https://github.com/bmschmidt/bookworm-geolocator.git .bookworm/extensions
+	git clone https://github.com/bmschmidt/bookworm-geolocator.git $@
 
-geolocation.cnf:
+.bookworm/extensions/bookworm-geolocator/geolocation.cnf:
 	echo "geonamesID=nobody" > $@
-	echo "bookwormName=IndexCatalog" >> $@
+	echo "bookwormName=indexcatalog" >> $@
 	echo "fieldName=Place" >> $@
-	echo "outputFile=geocode.txt" >> $@
+	echo "outputFile=geocoded.txt" >> $@
 	echo "nToAdd=0" >> $@
 
-geocoding: .bookworm/extensions/bookworm-geolocator geolocation.cnf
+geocoding: .bookworm/extensions/bookworm-geolocator .bookworm/extensions/bookworm-geolocator/geolocation.cnf
 	make -C $<
 
 downloads:
