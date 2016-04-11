@@ -57,3 +57,5 @@ IndexCatalogueSeries1.xml.gz IndexCatalogueSeries2.xml.gz IndexCatalogueSeries3.
 *.gz
 .bookworm
 .DS_Store
+input.txt
+jsoncatalog.txt
